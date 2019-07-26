@@ -1,0 +1,97 @@
+/* 取消所有元素的默认边距属性 */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*标题样式:居中，颜色，距离上边距离*/
+h3 {
+	text-align: center;
+	color: blue;
+	margin-top: 20px;
+}
+/*外层div框游戏图形区域:*/
+#main_frame {
+	width: 1001px;
+	height: 600px;
+	border: 3px inset black;
+	margin: 20px auto;
+
+}
+/*左边区域:宽高，左浮动，蛇食物元素要在这个区域移动进行定位处理*/
+#left {
+	width: 800px;
+	height: 600px;
+	float: left;
+	position: relative;
+	color: white;
+	text-align: center;	
+}
+/*右边区域:宽高，背景颜色，边框，左浮动，文本居中，文字颜色*/
+#right {
+	width: 200px;
+	height: 600px;
+	background-color: aqua;
+	border-left: 1px solid #0000FF;
+	float: left;
+	text-align: center;
+	color: red;
+}
+/*右边区域显示分数标签p:距离上边框20px，字体大小，颜色，文本居中，距离下边框20px（为了不让下面的标签紧贴）*/
+#right_score{
+	margin-top: 20px;
+	font-size: 24px;
+	color: red;
+	text-align: center;
+	margin-bottom: 20px;
+}
+/*右边开始按钮样式:上-左右-下，颜色*/
+#start{
+	width: 100px;
+	height: 35px;
+	/* margin: 50px auto 70px;*/
+	margin: 50px auto 50px;
+	color: blue;
+}
+/*游戏说明处样式:上边距，取消li前面圆点*/
+#right ul {
+	margin-top: 30px;
+	list-style: none;
+}
+#game_explain{
+	font-size: 18px;
+	
+}
+#bgm{
+	width: 200px;
+	height: 50px;
+
+}
+#skin{
+	width: 200px;
+	height: 50px;
+}
+
+#skin_blue{
+	width: 200px;
+	height: 50px;
+}
+#left_div_tanfrom{
+	animation-name: zxc;
+	animation-duration: 5s;
+	animation-direction:alternate;
+	margin-top: 400px;
+}
+
+@keyframes zxc{
+			1%{margin-top:1px;}
+			100%{margin-top: 400px;color: red;}	
+	}
+	
+	body{
+		/* background-image: url(../img/gimg.jpg); */
+		background-repeat: no-repeat;
+		background-position:center;
+		background-size: 100% 100%;
+		background-color:black;	
+	}
